@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+{% block title %}Accueil{% endblock %}
+{% block body %}
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5 text-center text-xl-start">
+                        <h1 class="display-5 fw-bolder text-white mb-2">TaskTodo, la solution organisation</h1>
+                        <p class="lead fw-normal text-white-50 mb-4">Reprenez le contrôle de votre emploi du temps grace au gestionnaire de tâche pratique et sécurisé</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Démarrer</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#knowMore">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{{ asset('assets/image1tasktodo.jpg') }}" alt="Employée de TaskTodo heureuse" /></div>
+             </div>
+        </div>
+    </header>
+    <!-- Features section-->
+    <section id="knowMore" class="py-5" id="features">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Soyez le maitre de votre quotidien</h2></div>
+                <div class="col-lg-8">
+                    <div class="row gx-5 row-cols-1 row-cols-md-2">
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-calendar-check"></i></div>
+                            <h2 class="h5">Gérer votre temps</h2>
+                            <p class="mb-0">Adhérer à un gestionnaire de tâches fiable et précis.</p>
+                        </div>
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-broadcast"></i></div>
+                            <h2 class="h5">Disponible partout</h2>
+                            <p class="mb-0">Consulter votre gestionnaire de tâches ou que vous soyez.</p>
+                        </div>
+                        <div class="col mb-5 mb-md-0 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-moon-stars"></i></div>
+                            <h2 class="h5">N'importe quand</h2>
+                            <p class="mb-0">Consulter votre gestionnaire de tâches 24h/24, 7j/7.</p>
+                        </div>
+                        <div class="col h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-shield-lock"></i></div>
+                            <h2 class="h5">Sécurisé</h2>
+                            <p class="mb-0">TaskTodo assure la sécurité de vos données et leurs confidentialités.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial section-->
+    <div class="py-5 bg-light">
+        <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-10 col-xl-7">
+                     <div class="text-center">
+                        <div class="fs-4 mb-4 fst-italic">"TaskTodo à vraiment changé ma vie ! Ce gestionnaire de taches m'a permis d'avoir un controle total de mon emploi du temps."</div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img id="imgpaul" class="rounded-circle me-3" src="{{ asset('assets/image2tasktodo.jpg') }}" alt="Portrait de Paul Antolin" />
+                            <div class="fw-bold">
+                                Paul Antolin
+                                <span class="fw-bold text-primary mx-1">/</span>
+                                CEO, les Gens-bons
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
